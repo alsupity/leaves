@@ -13,6 +13,7 @@
         'views/hr_salary_rule_views.xml',
         'views/hr_salary_component_type_views.xml',
         'views/hr_payslip_run_views.xml',
+        'views/hr_leave_balance_report_views.xml',
 
     ],
     'installable': True,
