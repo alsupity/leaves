@@ -2,3 +2,4 @@ id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_hr_job_grade,access_hr_job_grade,model_hr_job_grade,,1,1,1,1
 access_hr_employee_group,access_hr_employee_group,model_hr_employee_group,,1,1,1,1
 access_hr_salary_component_type,access_hr_salary_component_type,model_hr_salary_component_type,hr_payroll.group_hr_payroll_user,1,1,1,1
+access_hr_leave_balance_report,access_hr_leave_balance_report,model_hr_leave_balance_report,base.group_user,1,0,0,0
