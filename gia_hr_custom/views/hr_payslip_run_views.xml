@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="hr_payslip_run_view_form_inherit" model="ir.ui.view">
+        <field name="name">hr.payslip.run.form.inherit</field>
+        <field name="model">hr.payslip.run</field>
+        <field name="inherit_id" ref="hr_payroll_account.hr_payslip_run_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//button[@name='action_validate']" position="after">
+                <button name="action_validate_grouped" 
+                        type="object" 
+                        string="Create Grouped Entries" 
+                        invisible="state != 'verify'" 
+                        class="oe_highlight" 
+                        context="{'payslip_generate_pdf': True}" 
+                        confirm="This will create one journal entry per component type for all payslips. Are you sure you want to proceed?"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

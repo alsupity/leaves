@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Basic Salary Component Type -->
+        <record id="hr_salary_component_type_basic" model="hr.salary.component.type">
+            <field name="name">Basic Salary</field>
+            <field name="code">basic</field>
+            <field name="description">Basic salary component including base pay</field>
+        </record>
+
+        <!-- Incentive Component Type -->
+        <record id="hr_salary_component_type_incentive" model="hr.salary.component.type">
+            <field name="name">Incentive</field>
+            <field name="code">incentive</field>
+            <field name="description">Incentive types of allowances including Incentive_ALW_TAX, Incentive_ADVANCE, etc.</field>
+        </record>
+
+        <!-- Monthly_Transportation Component Type -->
+        <record id="hr_salary_component_type_monthly_transportation" model="hr.salary.component.type">
+            <field name="name">Monthly Transportation</field>
+            <field name="code">transportation</field>
+            <field name="description">Monthly Transportation types of deductions including taxes, etc.</field>
+        </record>
+
+        <!-- PETROL ALW Component Type -->
+        <record id="hr_salary_component_type_petrol_alw" model="hr.salary.component.type">
+            <field name="name">PETROL ALW</field>
+            <field name="code">petrol</field>
+            <field name="description">PETROL ALW benefits.</field>
+        </record>
+
+        <!-- Food ALW Component Type -->
+        <record id="hr_salary_component_type_food_alw" model="hr.salary.component.type">
+            <field name="name">Food ALW</field>
+            <field name="code">food</field>
+            <field name="description">Food ALW bonuses</field>
+        </record>
+    </data>
+</odoo>

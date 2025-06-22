@@ -1,0 +1,14 @@
+<odoo>
+    <record id="view_hr_contract_form_custom" model="ir.ui.view">
+        <field name="name">hr.contract.form.custom</field>
+        <field name="model">hr.contract</field>
+        <field name="inherit_id" ref="hr_contract.hr_contract_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='contract_type_id']" position="after">
+                    <field name="job_grade_id"/>
+                    <field name="employee_group_id"/>
+                    <field name="hiring_date"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
